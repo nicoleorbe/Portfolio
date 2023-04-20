@@ -1,20 +1,37 @@
 :root {
   --heading: "Josefin Sans", sans-serif;
   --body: "Josefin Slab", serif;
-
-  --button-box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, 0.2);
+  --monospace: "PT Mono", monospace;
+  --primary-color: black;
+  --secondary-color: white;
   --button-hover-transiton: all 200ms ease-in-out;
   --button-border-radius: 20px;
-  --button-date-shadow: 2px 2px 2px 1px rgba(72, 151, 168, 0.3);
-  --shadow: 0px 0px 20px 6px rgba(72, 151, 168, 0.5);
+  --yellow: #ffe700;
+  --pink: #fe4e6e;
+  --purple: #613864;
+  --gray: #d8d7d7;
+  --box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
+
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   font-family: var(--heading);
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-size: 96px !important;
+}
+
+h2 {
+  font-size: 48px !important;
+}
+
+h3 {
+  font-size: 24px !important;
+  opacity: 0.7;
 }
 
 body {
@@ -24,21 +41,133 @@ body {
 }
 
 footer {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: var(--heading);
   text-align: center;
   margin-bottom: 5px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 footer span {
   display: inline-block;
 }
+
+.navbar {
+  background-color: var(--purple) !important;
+  color: white !important;
+}
+.navbar-brand,
+.offcanvas-header {
+  font-family: var(--monospace);
+  font-size: 28px !important;
+  color: white !important;
+}
+
+.navbar-toggler,
+.navbar-toggler:hover,
+.navbar-toggler:active .navbar-toggler:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.offcanvas {
+  background-color: var(--purple) !important;
+}
+.offcanvas-title {
+  font-family: var(--monospace);
+}
+
+.offcanvas .nav-item {
+  font-size: 18px;
+  font-weight: bolder;
+  font-family: var(--heading);
+}
+
+.offcanvas-social i {
+  color: white;
+}
+
+.offcanvas-social a:hover {
+  color: var(--pink);
+}
+
+.shecodes a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+  color: white;
+}
+
+.container-body {
+  margin-top: 150px;
+}
+
+.row {
+  margin-left: 0px !important;
+}
+
+.navigation-links {
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.navigation-links a {
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.btn-dark-color {
+  background: var(--pink);
+  box-shadow: var(--box-shadow);
+  color: white;
+  text-decoration: none;
+  max-width: 150px !important;
+  transition: all 200ms ease-in-out;
+}
+
+.btn-dark-color:hover {
+  background: white;
+  box-shadow: var(--box-shadow);
+  color: var(--pink);
+  border: 1px solid var(--pink);
+}
+
+.btn-light-color {
+  color: var(--pink);
+  border: 1px solid var(--pink);
+  box-shadow: var(--box-shadow);
+  text-decoration: none;
+  max-width: 150px !important;
+  transition: all 200ms ease-in-out;
+}
+
+.btn-light-color:hover {
+  color: white;
+  background-color: var(--pink);
+  border: 1px solid var(--pink);
+}
+
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--purple);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
 .footer-dark {
   color: white;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: var(--body);
   text-align: center;
   margin-bottom: 5px;
-  font-size: 12px;
+  font-size: 16px;
+  font-weight: 800;
 }
 
 .footer-dark a {
@@ -49,7 +178,7 @@ footer span {
   background: linear-gradient(-225deg, #ff057c 0%, #8d0b93 50%, #321575 100%);
   color: white;
   border-radius: 4px;
-  padding: 3px;
+  padding: 5px;
 }
 
 .span-footer-name:hover {

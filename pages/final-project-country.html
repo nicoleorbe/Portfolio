@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country Living</title>
+    <style>
+      h1,
+      h2,
+      h3,
+      ul,
+      button {
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: rgb(21, 186, 196);
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      h3 {
+        font-size: 14px;
+      }
+
+      body {
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(253, 239, 132) 0%,
+          rgb(247, 198, 169) 54.2%,
+          rgb(21, 186, 196) 100.3%
+        );
+        background-attachment: fixed;
+      }
+
+      ul {
+        list-style: disc;
+        font-size: 12px;
+      }
+
+      li {
+        transition: all 200ms ease-out;
+      }
+
+      li:hover {
+        margin-left: 5px;
+      }
+
+      img {
+        border-radius: 4px;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      button {
+        font-weight: 600;
+      }
+
+      footer {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        text-align: center;
+      }
+
+      .dark-theme {
+        background: linear-gradient(
+          112.1deg,
+          rgb(32, 38, 57) 11.4%,
+          rgb(63, 76, 119) 70.2%
+        );
+        background-attachment: fixed;
+        color: white;
+      }
+
+      .dark-theme h1 {
+        color: white;
+      }
+
+      .dark-theme h2 {
+        color: white;
+      }
+
+      .dark-theme h3 {
+        color: white;
+      }
+
+      .dark-theme .container {
+        background: black;
+      }
+      .dark-theme .learn-more {
+        background-color: white;
+        color: #20273a;
+        border: none;
+        box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.2);
+      }
+
+      .dark-theme .learn-more:hover {
+        background-color: rgb(63, 76, 119);
+        color: white;
+        border: none;
+      }
+
+      .dark-theme .make-it-dark {
+        background-color: white;
+        color: black;
+      }
+
+      .container {
+        background-color: white;
+        box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.4);
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 15px 60px;
+        border-radius: 20px 80px 20px 80px;
+      }
+
+      .image-intro img {
+        width: 100%;
+        box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.4);
+        transition: all 200ms ease-in-out;
+      }
+
+      .image-intro img:hover {
+        transform: scale(1.05);
+        filter: brightness(125%);
+      }
+      .image-gallery {
+        display: grid;
+        margin-top: 10px;
+        grid-template-columns: repeat(4, minmax(min-content, 1fr));
+        justify-content: center;
+        grid-gap: 10px;
+      }
+
+      .image-gallery img {
+        width: 100%;
+        box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.4);
+        transition: all 200ms ease-in-out;
+      }
+
+      .image-gallery img:hover {
+        transform: scale(1.05);
+        filter: brightness(125%);
+      }
+
+      .image-fig {
+        width: 100%;
+        height: 100%;
+      }
+
+      .make-it-dark {
+        display: block;
+        margin: 0 auto;
+        font-size: 10px;
+        padding: 5px;
+        width: auto;
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+        border-radius: 20px;
+        box-shadow: 2px 2px 2px 1px rgb(21, 186, 196, 0.4);
+        transition: all 200ms ease-in-out;
+      }
+
+      .make-it-dark:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid white;
+        cursor: pointer;
+      }
+
+      .learn-more {
+        display: block;
+        margin-top: 20px;
+        padding: 10px;
+        width: auto;
+        background-color: rgb(21, 186, 196);
+        color: white;
+        border: 1px solid rgb(21, 186, 196);
+        border-radius: 20px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        transition: all 200ms ease-in-out;
+      }
+
+      .learn-more:hover {
+        background-color: rgb(253, 239, 132);
+        color: rgb(21, 186, 196);
+        border: 1px solid rgb(253, 239, 132);
+        cursor: pointer;
+      }
+
+      #span-footer {
+        background: linear-gradient(
+          96.2deg,
+          rgb(255, 230, 112) 10.4%,
+          rgb(255, 100, 100) 43.8%,
+          rgb(0, 93, 219) 105.8%
+        );
+        color: white;
+        border-radius: 4px;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="make-it-dark">Change Theme</button>
+    <div class="container">
+      <h1>Living The Country Life 😎</h1>
+      <h2>My <em>new</em> favorite hobby</h2>
+      <hr />
+      <h3>8 Benefits of Living in the Country</h3>
+      <ul class="country-life-list">
+        <li>More space.</li>
+        <li>Proximity to nature.🌳</li>
+        <li>Cleaner air.</li>
+        <li>Cheaper cost of living.</li>
+        <li>Increased safety.</li>
+        <li>Less noise.</li>
+        <li>More privacy.</li>
+        <li>Lower stress. 🧘🏻</li>
+      </ul>
+      <div class="image-intro">
+        <img
+          class="img-lakeview"
+          src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/34/09/4c/a-summer-lovers-dream.jpg?w=700&h=500&s=1"
+          alt="Lakeview"
+        />
+      </div>
+      <div class="image-gallery">
+        <img
+          class="image-fig img-kayaking"
+          src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/34/09/4e/a-summer-lovers-dream.jpg?w=500&h=-1&s=1"
+          alt="Kayaking"
+        />
+        <img
+          class="image-fig img-sunset"
+          src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/21/14/5f/lake-texoma-from-russwood.jpg?w=500&h=-1&s=1"
+          alt="Sunset"
+        />
+        <img
+          class="image-fig img-boathouse"
+          src="https://lighthouseresort.com/wp-content/uploads/2018/03/DTF_DiscoverTexoma-0088-1024x683.jpg"
+          alt="Boathouse"
+        />
+        <img
+          class="image-fig img-marina"
+          src="https://highport.com/wp-content/uploads/2015/11/SunsetOverTheIsland-5b1-5d.jpg"
+          alt="Marina"
+        />
+      </div>
+      <button class="learn-more">
+        <a
+          href="https://www.getunwired.com/8-benefits-of-living-in-the-country"
+          target="_blank"
+          >Learn More</a
+        >
+      </button>
+    </div>
+    <footer>Built by <span id="span-footer">Nicole Orbe</span></footer>
+    <script>
+      function makeItDark() {
+        let body = document.querySelector("body");
+
+        if (body.classList.contains("dark-theme")) {
+          body.classList.remove("dark-theme");
+        } else body.classList.add("dark-theme");
+      }
+
+      let darkButton = document.querySelector(".make-it-dark");
+      darkButton.addEventListener("click", makeItDark);
+    </script>
+  </body>
+</html>
