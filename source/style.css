@@ -9,7 +9,7 @@
   --yellow: #ffe700;
   --pink: #fe4e6e;
   --purple: #613864;
-  --gray: #d8d7d7;
+  --gray: #faf9f9;
   --box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -40,10 +40,13 @@ body {
   font-size: 18px;
 }
 
-footer {
+footer .site-info {
+  display: block;
+  padding: 20px 0px 0px 0px;
   font-family: var(--heading);
+  background-color: var(--gray);
   text-align: center;
-  margin-bottom: 5px;
+  margin: 20px auto;
   font-size: 14px;
 }
 
@@ -97,10 +100,24 @@ footer span {
   color: white;
 }
 
-.container-body {
-  margin-top: 150px;
+.home-hero {
+  background-color: var(--gray);
+  padding-top: 170px;
+  padding-bottom: 100px;
 }
-
+.here-title {
+  margin: 0 !important;
+  line-height: 50px;
+}
+.bg-underline li {
+  display: inline-block;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 50%,
+    var(--yellow) 50%
+  ) !important;
+}
 .row {
   margin-left: 0px !important;
 }
@@ -111,16 +128,16 @@ footer span {
 }
 
 .navigation-links a {
-  margin: 20px;
-  border-radius: 4px;
-  padding: 20px 15px;
+  margin: 10px 10px;
+  border-radius: 30px;
+  padding: 15px 15px;
   text-decoration: none;
   text-transform: capitalize;
+  box-shadow: var(--box-shadow);
 }
 
 .btn-dark-color {
   background: var(--pink);
-  box-shadow: var(--box-shadow);
   color: white;
   text-decoration: none;
   max-width: 150px !important;
@@ -129,15 +146,14 @@ footer span {
 
 .btn-dark-color:hover {
   background: white;
-  box-shadow: var(--box-shadow);
   color: var(--pink);
   border: 1px solid var(--pink);
 }
 
 .btn-light-color {
   color: var(--pink);
+  background-color: white;
   border: 1px solid var(--pink);
-  box-shadow: var(--box-shadow);
   text-decoration: none;
   max-width: 150px !important;
   transition: all 200ms ease-in-out;
@@ -159,6 +175,11 @@ footer span {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+.img-nicole {
+  max-width: 400px !important;
+  border-radius: 50% 20% / 10% 40%;
 }
 
 .footer-dark {
