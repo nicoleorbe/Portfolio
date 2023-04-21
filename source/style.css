@@ -227,6 +227,20 @@ footer span {
   font-size: 24px;
 }
 
+.contact-box {
+  background-color: var(--gray);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+
+.contact-box h3 {
+  font-size: 48px !important;
+}
+
+.contact-box p {
+  font-size: 24px !important;
+}
+
 .footer-dark {
   color: white;
   font-family: var(--body);
